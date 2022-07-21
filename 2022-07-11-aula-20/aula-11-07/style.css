@@ -1,0 +1,35 @@
+.item1{
+    grid-area: header ;
+    background-color: #2196f3;
+    color: white;
+    align-items: center;
+}
+.item2 {
+    grid-area: menu ;
+    background-color: green;
+    color: white;
+}
+.item3 {
+    grid-area: main;
+    background-color: purple;
+    color: white;
+}
+.item4 {
+    grid-area: right;
+    background-color: red;
+    color: white;
+}
+.item5 {
+    grid-area: footer;
+    background-color: orange;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #b8d7f1;
+    padding: 10px;
+}
