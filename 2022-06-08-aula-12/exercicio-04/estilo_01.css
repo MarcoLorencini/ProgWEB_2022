@@ -1,0 +1,131 @@
+.conteiner {
+    margin: 0 auto;
+    width: 960px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #7b8a84 url(noise.png);
+}
+
+.clear {
+  clear: both;
+}
+
+a{
+    color: #b7cc18;
+    text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.lugar{
+    border-color: #8cbfaf #545454 #545454 #8cbfaf;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ede7d5;
+    border-radius: 20px;
+}
+
+.lugar a{
+    color: #8cbfaf;
+    font-weight: bold;
+}
+
+.lugar h2 {
+    color: #b7cc18;
+    border-bottom: 1px dashed #545454;
+    margin: 0;
+}
+
+.lugar img{
+  height: 200px;
+  border: 1px solid #8cbfaf ;
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 2px;
+  border-radius: 20px;
+}
+
+.notas ol, h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #b7cc18;
+}
+
+.notas li{
+  border: 1px solid #8cbfaf ;
+  margin-bottom: 3px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.notas {
+  background-color: #ede7d5;
+  padding: 10px;
+  float: left;
+  width: 260px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+.notas h2{
+  color: #b7cc18;
+  border-bottom: 1px dashed #545454;
+  margin: 0;
+}
+
+.notas ol{
+  font-size: 12px;
+}
+
+.menu {
+  float: right;
+}
+
+.todosLugares {
+  float: right;
+  width: 660px;
+}
+
+/* .imagem{
+    width: fit-content;
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -ms-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  } */

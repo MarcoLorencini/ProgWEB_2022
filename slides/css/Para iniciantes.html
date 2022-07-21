@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://tableless.github.io/iniciantes/manual/css/float-clear.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Para iniciantes</title>
+    <link href="./Para iniciantes_files/css" rel="stylesheet" type="text/css" media="screen and (min-width:800px)">
+    <link rel="stylesheet" type="text/css" href="./Para iniciantes_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./Para iniciantes_files/prettycss.css">
+    <link rel="stylesheet" type="text/css" href="./Para iniciantes_files/smallscreens.css" media="screen and (max-width:800px)">
+  </head>
+
+  <body style="">
+    <a href="https://github.com/tableless/iniciantes" class="lnk-fork"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./Para iniciantes_files/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <header>
+      <div class="limit">
+        <h1><a href="https://tableless.github.io/iniciantes/">Getting Started</a></h1>
+        <h2>Um guia para iniciantes na área de web.</h2>
+      </div>
+    </header>
+
+
+<div class="limit">
+  <aside class="sidebar">
+    <!-- Something before the submenus -->
+  </aside>
+
+  <nav class="navside" id="menu-css">
+  <h3><a href="https://tableless.github.io/iniciantes/manual/css/float-clear.html#menu-css">CSS</a></h3>
+  <ul>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/index.html">O que é CSS?</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/sintaxe-css.html">Sintaxe do CSS</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/inserindo-css.html">Como inserir CSS na página?</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/class-id.html">Diferença entre CLASS e ID</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/seletores.html">Seletores encadeados e agrupados</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/seletores-complexos.html">Seletores complexos</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/box-model.html">Box Model</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/background.html">Background</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/font.html">Font</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/overflow.html">Overflow</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/display.html">Display</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/margin-padding.html">Margin e Padding</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/position.html">Position</a></li>
+    <li><a href="https://tableless.github.io/iniciantes/manual/css/float-clear.html">Float e Clear</a></li>
+  </ul>
+</nav>
+
+
+<article class="content">
+  <h1>Propriedade Float e Clear</h1>
+  <h2>Estruturando e flutuando elementos</h2>
+
+  <p>Algo comum ao lermos alguma matéria em revistas ou jornais é uma imagem relacionada ao texto estar posicionada de um lado e, o conteúdo textual contornar a imagem. Algo parecido com isso:</p>
+  <img src="./Para iniciantes_files/float-left.png" alt="Representação de uma simulação de um layout clássico de revistas e jornais com uma foto do lado esquerdo e texto ao redor dela">
+  <p>E se precisássemos desenvolver um <i>template</i> parecido com a imagem acima. Provavelmente começaríamos com um código HTML assim:</p>
+  <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;figure&gt;</span></li><li class="L2"><span class="pln">  	</span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"img/imagem.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Imagem Xis"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">  	</span><span class="tag">&lt;figcaption&gt;</span><span class="pln">Legenda da imagem"</span><span class="tag">&lt;/figcaption&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/figure&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est.</span><span class="tag">&lt;/p&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est.</span><span class="tag">&lt;/p&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est</span><span class="tag">&lt;/p&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+<p>O que teríamos seria algo assim:</p>
+<img src="./Para iniciantes_files/exemplo-sem-float.png" alt="Representação mostrando uma imagem no topo e um bloco de texto abaixo dela">
+<p>Por que isso? O que acontece é que a tag <code>figure</code> ocupa toda a largura da página e entra no empilhamento do documento/página, o que não permite que outros elementos apareçam ao seu lado.</p>
+<p>É aí que entra o <i>float</i>. Em resumo, essa propriedade permite que tiremos um elemento do fluxo vertical da página e automaticamente faz com que o conteúdo que venha a seguir <i>flutue</i> ao seu redor.</p>
+<p>O <i>CSS</i> ficaria assim:</p>
+<pre class="lang-css prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">figure </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span></li><li class="L2"><span class="pln">  margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span></li></ol></pre>
+<p>O que fizemos foi <i>flutuar</i> a tag <code>figure</code> para o lado esquerdo e, colocar uma margem inferior e direita para que os parágrafos não fiquem grudados na imagem. Com isso conseguiríamos reproduzir um layout igual ao da primeira imagem. Poderíamos até variar e colocar nossa imagem do lado direito:</p>
+<pre class="lang-css prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">figure </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> right</span><span class="pun">;</span></li><li class="L2"><span class="pln">  margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span></li></ol></pre>
+<p>Aqui mudamos a direção que a tag <code>figure</code> vai flutuar e alteramos a margem do lado direito para o lado esquerdo. E teríamos um resultado assim:</p>
+<img src="./Para iniciantes_files/float-right.png" alt="Representação simulando um layout clássico de revistas e jornais com uma foto do lado direito e texto ao redor dela">
+<h3>A propriedade <i>clear</i></h3>
+<p>Continuando com o nosso exemplo anterior, imagine que agora precisássemos inserir um novo título com mais parágrafos abaixo da imagem. Algo parecido com isso: (para fins de exemplo, diminui o conteúdo textual ao redor da imagem)</p>
+<img src="./Para iniciantes_files/propriedade-clear.png" alt="Representação de um layout com imagem localizada no topo esquerdo com parágrafos ao redor dela e um título com mais parágrafos no fluxo da página">
+<p>Para representar esse conteúdo, teríamos um <i>HTML</i> semelhante a esse:</p>
+  <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;figure&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"img/imagem.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Imagem Xis"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;figcaption&gt;</span><span class="pln">Legenda da imagem"</span><span class="tag">&lt;/figcaption&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/figure&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est.</span><span class="tag">&lt;/p&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est.</span><span class="tag">&lt;/p&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;h3&gt;</span><span class="pln">Novo título</span><span class="tag">&lt;/h3&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est.</span><span class="tag">&lt;/p&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fugit, ipsam reprehenderit porro aperiam esse quibusdam ratione excepturi amet est.</span><span class="tag">&lt;/p&gt;</span></li><li class="L0"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+<p>No entanto, chegaríamos num resultado assim:</p>
+<img src="./Para iniciantes_files/exemplo-sem-clear.png" alt="Representação de um layout com imagem localizada no topo esquerdo com conteúdo textual ao redor dela">
+<p>Por que isso? Como definimos que a tag <code>figure</code> flutuaria à esquerda, saindo assim do fluxo vertical da página, todo conteúdo que vem após ela começa a preencher o espaço ao redor da imagem. O que acontece é que os parágrafos que vem logo após a tag <code>figure</code> são menores que a altura da imagem, fazendo com que o título (tag <code>h3</code>) ao invés de ser renderizada abaixo da imagem, apareça ao lado dela e seguindo o fluxo do documento.</p>
+<p>É aí que entra a propriedade <i>clear</i>. Ela tem a função de controlar o comportamento de elementos que apareçam no fluxo do documento após determinado elemento que possue a propriedade <i>float</i>. Em outras palavras, ela especifica se um elemento deve ser posicionado ao lado de elementos com <i>float</i> ou se devem ser colocados abaixo deles. A propriedade aceita 4 valores: </p>
+<ul>
+  <li><b>left</b>: Elemento é empurrado para baixo de elementos com <i>float left</i>;</li>
+  <li><b>right</b>: Elemento é empurrado para baixo de elementos com <i>float right</i>;</li>
+  <li><b>both</b>: Elemento é empurrado para baixo de elementos com <i>float left ou right</i>;</li>
+  <li><b>none</b>: Elemento não é empurrado para baixo de elementos com <i>float</i>.</li>
+</ul>
+<p>O <i>CSS</i> ficaria assim:</p>
+<pre class="lang-css prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">figure </span><span class="pun">{</span></li><li class="L1"><span class="pln">  </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span></li><li class="L2"><span class="pln">  margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">h3 </span><span class="pun">{</span><span class="pln"> clear</span><span class="pun">:</span><span class="pln"> both</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></li><li class="L6"><span class="com">/* Pelo fato da tag figure utilizar float left, aqui também poderíamos usar clear: left; */</span></li></ol></pre>
+<p>E com isso, conseguiríamos fazer com que o título (tag <code>h3</code>) fosse empurrado para baixo, sendo renderizado abaixo da tag <code>figure</code> e ficando igual ao layout que queríamos.</p>
+<h3>Mais exemplos</h3>
+<p>Esse foi apenas um exemplo da utilização da propriedade <i>float</i>. Outros casos que você pode ver em vários websites são:</p>
+<dl>
+  <dt>Menus de navegação</dt>
+  <dd><p><i>Float</i> usado nos itens da lista. Mais precisamente em cada <code>li</code>, para dispor os itens do menu na horizontal.</p></dd>
+  <dt>Grids</dt>
+  <dd><p><i>Float</i> usado para dividir partes do grid. Por exemplo, colocar um bloco de conteúdo à esquerda e um outro bloco à direita.</p></dd>
+</dl>
+</article>
+
+</div>
+
+    <script async="" src="./Para iniciantes_files/analytics.js.download"></script><script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-335027-18', 'tableless.github.io');
+      ga('send', 'pageview');
+    
+    </script>
+    <script src="./Para iniciantes_files/jquery.min.js.download"></script>
+    <script type="text/javascript" src="./Para iniciantes_files/prettify.js.download"></script>
+    <script type="text/javascript" src="./Para iniciantes_files/scripts.js.download"></script>
+  
+
+
+</body></html>

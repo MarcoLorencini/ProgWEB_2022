@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/ -->
+<html lang="pt-br" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Nickolas Joe | Qual a diferença entre Pixel, EM e REM? Entenda essas unidades CSS | Dicas e tutoriais de Desenvolvimento Web.</title>
+		<meta name="description" content="Inicie sua carreira de Desenvolvedor Front-end com dicas e tutoriais que facilitam sua jornada na web.">
+		<meta name="author" content="Nickolas Joe">
+
+		<meta property="og:title" content="Nickolas Joe | Qual a diferença entre Pixel, EM e REM? Entenda essas unidades CSS  | Dicas e tutoriais de Desenvolvimento Web.">
+		<meta property="og:description" content="Inicie sua carreira de Desenvolvedor Front-end com dicas e tutoriais que facilitam sua jornada na web.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.nickolasjoe.com">
+		<meta property="og:image" content="https://www.tigercodes.com.br/img/og-tigercodes.png">
+		<meta property="og:image:secure_url" content="https://www.tigercodes.com.br/img/og-tigercodes.png">
+		<meta property="og:image:type" content="image/png">
+  	<meta property="og:site_name" content="Nickolas Joe">
+
+		<link rel="shortcut icon" href="https://www.nickolasjoe.com/wp-content/themes/nickolasjoe/favicon.ico">
+		<meta name="theme-color" content="#DB2E2E">
+  	<link rel="apple-touch-icon" sizes="180x180" href="https://www.nickolasjoe.com/wp-content/themes/nickolasjoe/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" href="https://www.nickolasjoe.com/wp-content/themes/nickolasjoe/favicon-32x32.png" sizes="32x32">
+  	<link rel="icon" type="image/png" href="https://www.nickolasjoe.com/wp-content/themes/nickolasjoe/favicon-16x16.png" sizes="16x16">
+  	<meta name="apple-mobile-web-app-title" content="Nickolas Joe">
+  	<meta name="application-name" content="Nickolas Joe">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com/">
+		<link href="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/css2" rel="stylesheet">
+		<script type="text/javascript" async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/analytics.js.download"></script><script type="text/javascript" async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/js"></script><script type="text/javascript" async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/f.txt"></script><script async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/9d226be7fb0d112dc90f508b8.js.download"></script><script async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/fbevents.js.download"></script><script>document.documentElement.classList.add("js");</script>
+		<meta name="facebook-domain-verification" content="idpjhj22kcu5tmcn81ww5tfn4lt64g">
+		<!-- Facebook Pixel Code -->
+		<script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '432775827914766');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=432775827914766&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+		<!-- Global site tag (gtag.js) - Google Ads: 596674720 -->
+		<script async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/js(1)"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "AW-596674720");
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/js(2)"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-164727422-1');
+		</script>
+		<!-- Mailchimp JS Script -->
+		<script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/7440f3ceedc48a88c34d24ffc/9d226be7fb0d112dc90f508b8.js");</script>
+
+		<!-- Início WordPress Header -->
+		<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="tigercodes-style-css" href="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/style.css" type="text/css" media="">
+<link rel="https://api.w.org/" href="https://www.nickolasjoe.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.nickolasjoe.com/wp-json/wp/v2/posts/633"><link rel="canonical" href="https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/">
+<link rel="shortlink" href="https://www.nickolasjoe.com/?p=633">
+<link rel="alternate" type="application/json+oembed" href="https://www.nickolasjoe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nickolasjoe.com%2Fqual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.nickolasjoe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nickolasjoe.com%2Fqual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css%2F&amp;format=xml">
+		<!-- Final WordPress Header -->
+	<meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/f(1).txt"></script></head>
+	<body>
+
+		<header class="header">
+			<nav class="header-nav container">
+				<div class="logos">
+					<a class="header-logo" href="https://www.nickolasjoe.com/">NJ</a>
+					<a class="tigercodes" href="https://www.tigercodes.com.br/" target="_blank" rel="noreferrer noopener">
+						<svg id="tigercodes" xmlns="http://www.w3.org/2000/svg" width="185.833" height="26" viewBox="0 0 185.833 26">
+							<g transform="translate(-490 -50)">
+								<path id="Tiger_Codes" data-name="Tiger Codes" d="M4.941-10.345h5.522v-12.1h4.8v-4.282H.144v4.282h4.8ZM18.934-24.174c1.942,0,3.182-1.17,3.182-2.785,0-1.521-1.24-2.6-3.182-2.6s-3.182,1.17-3.182,2.691S16.992-24.174,18.934-24.174ZM16.29-10.345h5.288v-12.8H16.29Zm16.895-12.8v1.451a4.241,4.241,0,0,0-3.791-1.685,6,6,0,0,0-6.154,6.154,6.02,6.02,0,0,0,6.154,6.178A4.419,4.419,0,0,0,32.927-12.4v.234c0,1.708-.866,2.668-3.042,2.668a7.372,7.372,0,0,1-4.1-1.264l-1.778,3.6a11.833,11.833,0,0,0,6.412,1.591c4.891,0,7.792-2.363,7.792-7.324V-23.144ZM30.8-15.165a2.055,2.055,0,0,1-2.2-2.059,2.037,2.037,0,0,1,2.2-2.036,2.017,2.017,0,0,1,2.176,2.036A2.035,2.035,0,0,1,30.8-15.165Zm23.377-1.591c0-4.329-3.253-6.622-7.043-6.622-4.142,0-7.254,2.738-7.254,6.622,0,3.814,3.042,6.646,7.745,6.646,2.551,0,4.352-.7,5.593-2.059l-2.761-2.785a3.91,3.91,0,0,1-2.668.936,2.475,2.475,0,0,1-2.574-1.5H54.1C54.128-15.89,54.175-16.382,54.175-16.756Zm-7-3.019a1.986,1.986,0,0,1,2.059,1.708H45.119A1.971,1.971,0,0,1,47.178-19.775Zm13.689-1.989v-1.381H55.836v12.8h5.288v-5.686a2.426,2.426,0,0,1,2.714-2.761,7.328,7.328,0,0,1,1.17.094v-4.68A5.258,5.258,0,0,0,60.867-21.764ZM82.161-9.97a8.849,8.849,0,0,0,7.348-3.276l-3.487-3.112a4.425,4.425,0,0,1-3.58,1.919c-2.293,0-3.838-1.591-3.838-4.095s1.544-4.1,3.838-4.1a4.425,4.425,0,0,1,3.58,1.919l3.487-3.112A8.849,8.849,0,0,0,82.161-27.1c-5.265,0-9.126,3.533-9.126,8.564S76.9-9.97,82.161-9.97Zm15.187-.14c4.352,0,7.441-2.761,7.441-6.646s-3.089-6.622-7.441-6.622c-4.329,0-7.441,2.738-7.441,6.622S93.019-10.111,97.348-10.111Zm0-4.118c-1.17,0-2.083-.866-2.083-2.527s.913-2.5,2.083-2.5,2.083.842,2.083,2.5S98.518-14.229,97.348-14.229Zm17.971-13.478v5.429a4.457,4.457,0,0,0-3.253-1.1c-3.346,0-6.178,2.5-6.178,6.622s2.831,6.646,6.178,6.646a4.426,4.426,0,0,0,3.51-1.287v1.053h5.031V-27.707ZM113.33-14.229c-1.17,0-2.083-.866-2.083-2.527s.913-2.5,2.083-2.5,2.083.842,2.083,2.5S114.5-14.229,113.33-14.229Zm23.236-2.527c0-4.329-3.253-6.622-7.043-6.622-4.142,0-7.254,2.738-7.254,6.622,0,3.814,3.042,6.646,7.745,6.646,2.551,0,4.352-.7,5.593-2.059l-2.761-2.785a3.91,3.91,0,0,1-2.668.936,2.475,2.475,0,0,1-2.574-1.5H136.5C136.519-15.89,136.566-16.382,136.566-16.756Zm-7-3.019a1.986,1.986,0,0,1,2.059,1.708H127.51A1.971,1.971,0,0,1,129.569-19.775Zm13.666,9.664c4.446,0,6.622-2.012,6.622-4.329,0-5.125-7.348-3.393-7.348-4.727,0-.3.374-.608,1.732-.608a7.583,7.583,0,0,1,3.7.936l1.451-3.487a12.075,12.075,0,0,0-5.218-1.053c-4.306,0-6.552,1.966-6.552,4.376,0,5.125,7.371,3.37,7.371,4.68,0,.374-.351.608-1.638.608a9.262,9.262,0,0,1-4.469-1.147l-1.451,3.487A12.841,12.841,0,0,0,143.235-10.111Z" transform="translate(525.976 80.856)" fill="#b3afaf"></path>
+								<path id="marca" d="M28.689,16.856a14.348,14.348,0,0,0-4.223-9.277A8.886,8.886,0,0,0,28.689.469Q28.7.238,28.7,0V0h-.012c-.082,0-.163,0-.244,0A8.888,8.888,0,0,0,20.739,4.91q-.454-.226-.926-.42a14.407,14.407,0,0,0-10.907,0q-.472.194-.926.42A8.888,8.888,0,0,0,.273,0C.192,0,.11,0,.029,0H.017V0q0,.234.012.466A8.886,8.886,0,0,0,4.252,7.578,14.348,14.348,0,0,0,.029,16.856Q0,17.312,0,17.777H0a14.294,14.294,0,0,0,1.6,6.586,3.419,3.419,0,0,1,4.733-3.592,5.472,5.472,0,0,0-3.756,5.21L2.586,26a5.506,5.506,0,0,1,1.968-1.653,5.268,5.268,0,0,1,.605-.256,5.381,5.381,0,0,1,.793-.215,5.487,5.487,0,0,1,2.451.086,5.44,5.44,0,0,1,2.435,1.4l.018.017.018.018a2.052,2.052,0,0,0,2.627.2,2.016,2.016,0,0,0,.257-.218,2.046,2.046,0,0,0,.6-1.451,2.046,2.046,0,0,0,.6,1.451,2.016,2.016,0,0,0,.257.218,2.052,2.052,0,0,0,2.627-.2l.018-.018.018-.017a5.463,5.463,0,0,1,4.887-1.486,5.38,5.38,0,0,1,.793.215,5.268,5.268,0,0,1,.605.256A5.506,5.506,0,0,1,26.132,26l.013-.018a5.474,5.474,0,0,0-3.756-5.21,3.419,3.419,0,0,1,4.733,3.592,14.294,14.294,0,0,0,1.6-6.586h0Q28.718,17.312,28.689,16.856ZM11.546,9.165l.142-.141a0,0,0,0,1,0,0l.113-.113a.451.451,0,0,1,.063-.051,3.84,3.84,0,0,1,4.987,0,.451.451,0,0,1,.063.051l.113.113a0,0,0,0,1,0,0l.142.141a.392.392,0,0,1-.553.554l-.2-.2a3.047,3.047,0,0,0-4.117,0l-.2.2a.392.392,0,0,1-.553-.554Zm2.813,1.052a1.377,1.377,0,0,0-1.042.4l-.17.165a.425.425,0,0,1-.6-.6l.165-.169a.309.309,0,0,1,.031-.03l.03-.029a.082.082,0,0,1,.018-.014,2.4,2.4,0,0,1,3.137,0,.082.082,0,0,1,.018.014l.03.029a.309.309,0,0,1,.031.03l.165.169a.425.425,0,0,1-.6.6l-.17-.165A1.377,1.377,0,0,0,14.359,10.217Zm.684,1.441a.684.684,0,1,1-.684-.684A.684.684,0,0,1,15.043,11.659ZM9.132,15.452a2.052,2.052,0,0,1-.343-2.446l.034-.059L12.375,15l-.034.059a2.052,2.052,0,0,1-3.21.4Zm7.953,6.238a3.411,3.411,0,0,0-2.706,1.33c-.007.008-.014.017-.019.026l-.02-.026a3.423,3.423,0,0,0-3.8-1.152,2.051,2.051,0,0,1,3.305-.389l.018.02a.684.684,0,0,0,.988,0,.387.387,0,0,0,.027-.03,2.052,2.052,0,0,1,3.3.4A3.417,3.417,0,0,0,17.085,21.69Zm2.5-6.238a2.051,2.051,0,0,1-3.209-.395c-.012-.02-.023-.04-.034-.059L19.9,12.947l.034.059A2.053,2.053,0,0,1,19.586,15.452Z" transform="translate(490 50)" fill="#b3afaf"></path>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<a href="https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/#" data-menu="button" aria-expanded="false" aria-controls="menu"></a>
+				<ul id="menu" class="menu" data-menu="list"><li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="https://www.nickolasjoe.com/">Blog</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="https://www.nickolasjoe.com/o-canal/">O Canal</a></li>
+<li id="menu-item-793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-793"><a href="https://www.nickolasjoe.com/tutoriais/">Tutoriais</a></li>
+</ul>			</nav>
+		</header>
+<main class="main">
+	<a href="https://www.nickolasjoe.com/"><h1>Dicas e tutoriais de Desenvolvimento Web.</h1></a>
+</main>
+<div class="content container">
+
+	<div>
+				<article class="blog-post">
+			<h1 class="titulo"><a href="https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/">Qual a diferença entre Pixel, EM e REM? Entenda essas unidades CSS</a></h1>
+			<span class="publicado-em">Publicado em 26 de janeiro de 2021</span>
+
+			<p><a class="hover" style="display: block;  width: 100%; border-radius: 10px; overflow: hidden; box-shadow: 2px 2px 2px rgba(0,0,0,.05);" href="https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 715 298" style="display: block">
+  <defs>
+    <lineargradient id="css-linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3c9cd7"></stop>
+      <stop offset="1" stop-color="#2062af"></stop>
+    </lineargradient>
+  </defs>
+  <rect width="715" height="298" fill="url(#css-linear-gradient)"></rect>
+  <path d="M75.555,170h0L14.166,153.471,0,0H151.111L136.944,153.471,75.555,170ZM34.27,97.424l2.5,28.945L75.5,137.822V137.8l.07.021,38.524-11.245,5-57.473h-43.7l.107-.046,45.188-19.32L122.562,31.2H27.606L29.9,49.738H78.061L75.5,50.8,31.562,69.1l1.457,18.117,42.481.135,22.768.072L96.81,111.584l-21.31,6v-.019l-.174.049-20.582-5.2L53.494,97.423H34.27Z" transform="translate(282 64)" fill="#fff"></path>
+</svg></a></p>
+<p>Você sabe a diferença entre usar <code class="code">px</code>, <code class="code">em</code> ou <code class="code">rem</code> no CSS? Já se perguntou qual dessas unidades é melhor? Esta é uma dúvida que já recebi bastante no <a class="post-a" href="https://www.youtube.com/tiger_codes" rel="noopener" target="_blank">meu canal do YouTube</a>, e hoje vamos aprender a diferença entre cada uma delas.</p>
+<p><strong>Pixel</strong></p>
+<p>Pixel, ou <code class="code">px</code>, é um valor fixo.</p>
+<p>Ele serve muito bem para telas, e é o valor mais comumente usado.</p>
+<pre><code><span class="green">p</span> {
+  <span class="red">font-size</span>: 14px;
+}</code></pre>
+<p><span id="more-633"></span></p>
+<p>No final, tudo vira pixel no site. Mas e se o usuário decidisse ver esses pixels um pouco maiores em seu dispositivo? Se você definiu eles com um valor fixo sempre, eles não irão aumentar de tamanho, e isso pode ser considerado um problema de acessibilidade. Vamos tentar então encontrar uma solução nas unidades a seguir.</p>
+<p><strong>EM</strong></p>
+<p>Quando a unidade <code class="code">em</code> surgiu, foi uma verdadeira revolução.</p>
+<p>Agora tamanhos de tipografia passam a usar uma unidade relativa ao tamanho de fonte que o usuário escolher. Se o usuário decidir deixar as letras bem grandes no navegador ou dispositivo móvel dele (devido a ele enxergar pouco ou qualquer outro motivo) e o desenvolvedor utilizou a unidade <code class="code">em</code> no site, as letras irão se adaptar às suas preferências. Geralmente, o tamanho padrão para 1em é de 16px. 2em seria 32px (pois 16 x 2 = 32), e assim por diante.</p>
+<pre><code><span class="green">p</span> {
+  <span class="red">font-size</span>: 1em;
+}</code></pre>
+<p>O nome <code class="code">em</code> significa <em>emphemeral unit</em>, ou traduzindo para o português, unidade transitória! 🙂</p>
+<p>Qual talvez poderia ser um problema ao usar esta unidade?</p>
+<p>Faça o teste: se você definir <code class="code">font-size: 14px</code> no <code class="code">&lt;html&gt;</code> do seu site, e colocar <code class="code">font-size: 2em</code> em uma <code class="code">&lt;section&gt;</code>, ele será de 28px, pois 14 x 2 = 28. Até aí, nada de mais. O problema é que se você definir <code class="code">font-size: 2em</code> novamente, digamos, para uma <code class="code">&lt;ul&gt;</code> dentro desta <code class="code">&lt;section&gt;</code>, ele será de 56px, que é o dobro do dobro. Logo, isso pode acabar se tornando inconsistente e bastante complexo em um site grande, pois <code class="code">em</code> sempre é uma unidade relativa ao elemento pai.</p>
+<p>A solução para isso se encontra na unidade a seguir.</p>
+<p><strong>REM</strong></p>
+<p>Finalmente, chegamos ao futuro (ou deveria dizer, presente) das unidades CSS.</p>
+<p>Esperava-se esta unidade desde meados de 2010, conforme comentado por ninguém menos do que um dos criadores do CSS, Bert Bos, <a class="post-a" href="https://www.w3.org/Style/Examples/007/units.pt_BR.html#future" rel="noopener" target="_blank">neste artigo da W3C</a>, mas ela só foi lançada em 2013.</p>
+<p>O nome <code class="code">rem</code> significa <em>Root EM</em>. Se você definir na raiz do seu site <code class="code">font-size: 14px</code>, 1rem sempre será 14px em absolutamente qualquer elemento, corrigindo assim o problema do <code class="code">em</code> com elementos filhos.</p>
+<pre><code><span class="green">html</span> {
+  <span class="red">font-size</span>: 14px;
+}
+/*
+  Definindo um font-size na raiz. Obs.: Por padrão o valor é 16px, mas você pode colocar qualquer valor.
+*/
+
+<span class="green">section</span> {
+  <span class="red">font-size</span>: 2rem;
+}
+/*
+  A section terá um font-size de 28px, pois (14 x 2 = 28)
+*/
+
+<span class="green">ul</span> {
+  <span class="red">font-size</span>: 2rem;
+}
+/*
+  Usando rem ao invés de em, o font-size da ul que está dentro da section também será 28px, e não 56px! 😉
+*/</code></pre>
+<p>Compartilhe seu aprendizado.</p>
+
+			<div class="compartilhe">
+	<span>Compartilhe:</span>
+	<ul class="share-on">
+		<li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/&amp;title=Qual%20a%20diferen%C3%A7a%20entre%20Pixel,%20EM%20e%20REM?%20Entenda%20essas%20unidades%20CSS" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/facebook.svg" alt="Compartilhe no Facebook"></a></li>
+		<li><a href="https://twitter.com/intent/tweet?text=Qual%20a%20diferen%C3%A7a%20entre%20Pixel,%20EM%20e%20REM?%20Entenda%20essas%20unidades%20CSS+https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/twitter.svg" alt="Compartilhe no Twitter"></a></li>
+		<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/&amp;title=Qual%20a%20diferen%C3%A7a%20entre%20Pixel,%20EM%20e%20REM?%20Entenda%20essas%20unidades%20CSS" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/linkedin.svg" alt="Compartilhe no LinkedIn"></a></li>
+		<li><a href="https://pinterest.com/pin/create/button/?url=https://www.nickolasjoe.com/qual-a-diferenca-entre-pixel-em-e-rem-entenda-essas-unidades-css/" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/pinterest.svg" alt="Compartilhe no Pinterest"></a></li>
+	</ul>
+</div>
+			<div class="tags">
+				Tags: <a href="https://www.nickolasjoe.com/tag/css/" rel="tag">css</a>, <a href="https://www.nickolasjoe.com/tag/dicas/" rel="tag">dicas</a>, <a href="https://www.nickolasjoe.com/tag/front-end/" rel="tag">front-end</a>			</div>
+			<div class="autor">
+				<img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/profile.png" alt="Autor: Nickolas Joe">
+				<div>
+					<h2>Nickolas Joe</h2>
+					<p>Nickolas Joe tem 22 anos, é de São Paulo-SP e é formado em Comunicação Social com habilitação em Publicidade e Propaganda. Sempre foi apaixonado por internet, computação gráfica e programação, fundou a Tiger Codes para prestar serviços de web design e criou o canal para compartilhar seu conhecimento.</p>
+				</div>
+			</div>
+		</article>
+
+		
+		<div class="nav-blog">
+								</div>
+
+			</div>
+
+	<aside class="sidebar">
+	<div class="anuncio">
+		<a href="https://www.tigercodes.com.br/" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/tigercodes-ad.svg" alt="Anúncio Tiger Codes"></a>
+	</div>
+	<div class="box categorias">
+		<h2>O que você está procurando?</h2>
+		<ul>
+			<li><a href="https://www.nickolasjoe.com/tag/front-end/">#front-end</a></li>
+			<li><a href="https://www.nickolasjoe.com/tag/tutoriais/">#tutoriais</a></li>
+			<li><a href="https://www.nickolasjoe.com/tag/design-responsivo/">#design-responsivo</a></li>
+			<li><a href="https://www.nickolasjoe.com/tag/desenvolvimento-web/">#desenvolvimento-web</a></li>
+		</ul>
+	</div>
+	<div class="box redes-sociais">
+		<h2>Redes Sociais</h2>
+		<ul>
+			<li><a href="https://www.youtube.com/tiger_codes" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/youtube.svg" alt="YouTube Tiger Codes"><span>YouTube</span></a></li>
+			<li><a href="https://www.instagram.com/tiger_codes" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/instagram.svg" alt="Instagram Tiger Codes"><span>Instagram</span></a></li>
+			<li><a href="https://www.facebook.com/tigercodesbrasil" target="_blank" rel="noreferrer noopener"><img src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/facebook.svg" alt="Facebook Tiger Codes"><span>Facebook</span></a></li>
+		</ul>
+	</div>
+</aside>
+</div>
+
+	<footer class="footer">
+		<div class="newsletter">
+			<div class="container newsletter-container">
+				<span>Assine minha <strong>newsletter</strong></span>
+				<p>Inscreva-se para receber e-mails sobre novas postagens e outras informações. Cancele a assinatura a qualquer momento.</p>
+
+				<!-- Begin Mailchimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="https://tigercodes.us8.list-manage.com/subscribe/post?u=b03e62d7b600b41d120a21f6b&amp;id=4876d3980c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+						<div id="mc_embed_signup_scroll">
+							<div class="mc-field-group form">
+								<label for="mce-EMAIL">Digite seu melhor e-mail</label>
+								<input type="email" placeholder="Digite seu melhor e-mail" name="EMAIL" class="required email" id="mce-EMAIL" required="">
+								<button class="form-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Enviar</button>
+							</div>
+							<div class="mc-field-group input-group" style="display:none">
+								<ul>
+								<li><input type="checkbox" value="2" name="group[303994][2]" id="mce-group[303994]-303994-1" checked=""><label for="mce-group[303994]-303994-1">Newsletter NJ</label></li>
+								</ul>
+            	</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_7440f3ceedc48a88c34d24ffc_d94d677c34" tabindex="-1" value="">
+							</div>
+						</div>
+					</form>
+				</div>
+				<!--End mc_embed_signup-->
+				
+			</div>
+		</div>
+		<div class="container footer-container">
+			<div>
+				<h2>Sobre</h2>
+				<p>Nickolas Joe tem 22 anos, é de São Paulo-SP e é formado em Comunicação Social com habilitação em Publicidade e Propaganda. Sempre foi apaixonado por internet, computação gráfica e programação, fundou a Tiger Codes para prestar serviços de web design e criou o canal para compartilhar seu conhecimento.</p>
+			</div>
+			<div class="footer-projetos">
+				<h2>Sites</h2>
+				<a href="https://www.nickolasjoe.com/">Nickolas Joe</a>
+				<a href="https://www.tigercodes.com.br/" target="_blank" rel="noreferrer noopener">Tiger Codes</a>
+			</div>
+			<div class="contato">
+				<h2>Contato Comercial</h2>
+				<a href="mailto:contato@nickolasjoe.com">contato@nickolasjoe.com</a>
+				<ul class="contato-redes">
+					<li><a href="https://www.youtube.com/tiger_codes" target="_blank" rel="noreferrer noopener">YouTube</a></li>
+					<li><a href="https://www.instagram.com/tiger_codes" target="_blank" rel="noreferrer noopener">Instagram</a></li>
+					<li><a href="https://www.facebook.com/tigercodesbrasil" target="_blank" rel="noreferrer noopener">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container copyright-container">
+				<div>
+					<p>Copyright © 2022 Nickolas Joe. Todos os direitos reservados.</p>
+					<p>Desenvolvido com ❤️</p>
+				</div>
+				<a href="https://www.nickolasjoe.com/">NJ</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Início WordPress Footer -->
+	<script type="text/javascript" src="./Nickolas Joe _ Qual a diferença entre Pixel, EM e REM_ Entenda essas unidades CSS _ Dicas e tutoriais de Desenvolvimento Web._files/script.js.download" id="script-js"></script>
+	<!-- Final WordPress Footer -->
+	
+</body></html>

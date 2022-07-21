@@ -1,0 +1,40 @@
+* {
+    background-color: #000000;
+}
+
+.container {
+    width: px;
+    height:190px;
+    background-color:green;
+    padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.trabalho {
+    float:left; 
+    background:Red;
+    width:25%;
+    height: 50px;
+}
+
+.logo-compcast {
+    float:left; 
+    background:Red;
+    width:25%;
+    height:50px;
+}
+
+.instagram, a{
+    float:right; 
+    background:Red;
+    width:25%;
+    height:50px;
+}
+
+
+.color1 { color: #000000 };
+.color2 { color: #7890a8 };
+.color3 { color: #304878 };
+.color4 { color: #181848 };
+.color5 { color: #f0a818 };
