@@ -1,0 +1,58 @@
+1. Explique o que é um motor de renderização e qual é sua utilização/aplicação nos navegadores
+web.
+R: Há uma grande diversidade de dispositivos que acessam a internet. Entre eles, há uma série de tablets, smartphones, pc’s e etc. Cada um destes meios de acesso utilizam um determinado browser 
+para navegar na web. Não há como os desenvolvedores manterem um bom nível de compatibilidade com todos estes browsers levando em consideração a particularidade de cada um. Uma maneira 
+mais segura de manter o código compatível, é nivelar o desenvolvimento pelos motores de renderização. Cada browser utiliza um motor de renderização que é responsável pelo processamento do 
+código da página.
+
+2. Sobre HTML, responda:
+a) Qual é a estrutura básica de um HTML5 (o que deve ter por padrão e o que vai em cada
+local)?
+R:
+b) Qual é a importância dos novos elementos e atributos do HTML5?
+R:
+c) Como definir o idioma da página?
+R:
+d) Como definir a codificação da página?
+R:
+e) Quais os erros que ocorrem quando a codificação do arquivo é diferente da codificação
+informada na página?
+R:
+f) Como adicionar um estilo somente em um elemento do HTML?
+R:
+g) Como adicionar várias definições de estilo na página Web?
+R:
+h) Como adicionar um estilo que está em um arquivo externo?
+R:
+i) O que são elementos de linha e elementos de bloco? Qual a diferença entre eles?
+R:
+j) Descreva de forma sucinta para que serve cada um dos elementos à seguir:
+i. section;
+R:
+ii. nav;
+R:
+iii. article;
+R:
+iv. aside;
+R:
+v. hgroup;
+R:
+vi. header;
+R:
+vii. footer;
+R:
+viii. span;
+R:
+k) Descreva de forma sucinta para que serve cada um dos atributos à seguir:
+i. autofocus;
+R:
+ii. placeholder;
+R:
+iii. required;
+R:
+iv. maxlength.
+R:
+l) Quais os elementos e atributos descontinuados?
+R:
+m) O que é DOM? Dê um exemplo.
+R:

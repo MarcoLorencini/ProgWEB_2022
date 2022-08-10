@@ -1,0 +1,12 @@
+/* estilizando os componentes principais */
+#menu input ~ ul li a{
+    color: #2A2F33;
+    background-color: white;
+    text-decoration: none;
+}
+
+#menu input ~ ul li a:hover{
+    color: white;
+    background-color:  #2A2F33;
+    text-decoration: none;
+}

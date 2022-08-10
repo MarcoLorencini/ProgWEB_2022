@@ -1,0 +1,13 @@
+ul {
+    list-style:none;
+}
+li {
+    width: 100px;
+    height:36px;
+    line-height:36px;
+    text-align: center;
+    display:inline-block;
+}
+li:hover, .active {
+    background-color:#00ff00!important;
+}
