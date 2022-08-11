@@ -1,12 +1,221 @@
 /* estilizando os componentes principais */
-#menu input ~ ul li a{
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* GENERICOS */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #8bd0f2;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* HEADER */
+
+body header{
+    background-color: #046DD5;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+body header a{
+    text-decoration: none;
+    color: white;
+}
+
+body header h1 {
+    margin: 0;
+    padding-top: 8px;
+    font-size: 1.7rem;
+}
+
+body header h2 {
+    margin: 0px;
+}
+
+body header h2 a{
+    font-size: 0.5em;   
+}
+
+body header #signup a{
+    font-size: 0.7em; 
+
+}
+
+body header #signup a:nth-child(1){
+    border-right: 1px solid white;
+    padding-right: 6px;
+}
+
+body header #signup a:nth-child(2){
+    padding-right: 5px;
+}
+/* NAV */
+
+#menu input ~ ul li{
+    display: block;
     color: #2A2F33;
     background-color: white;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu input ~ ul li:hover{
+    color: white;
+    background-color:  #2A2F33;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 1px;
+}
+
+#menu input ~ ul li a{
+    color: #2A2F33;
+    background-color: transparent;
     text-decoration: none;
 }
 
 #menu input ~ ul li a:hover{
     color: white;
-    background-color:  #2A2F33;
+    background-color: transparent;
     text-decoration: none;
 }
+
+body nav ul{
+    background-color: white;
+    text-align: center;
+    list-style-type: none;
+    margin: 0.5px;
+    padding: 0;
+}
+
+body nav ul li{
+    padding: 0;
+}
+
+body nav ul li a{
+    padding: 0 0 0 0;
+    margin-top: 0;
+}
+
+body nav ul li:nth-child(1){
+    border-top: 5px solid #E1493E;
+}
+body nav ul li:nth-child(2){
+    border-top: 5px solid #8ABA56;
+}
+body nav ul li:nth-child(3){
+    border-top: 5px solid #5B4282;
+}
+body nav ul li:nth-child(4){
+    border-top: 5px solid #FF8932;
+}
+body nav ul li:nth-child(5){
+    border-top: 5px solid #19B6E9;
+}
+body nav ul li:nth-child(6){
+    border-top: 5px solid #E84C8B;
+}
+
+/* ASIDE */
+
+body aside{
+    background-color: #2A2F33;
+    padding: 15px 0;
+    margin: 0;
+}
+
+body aside h1{
+    padding-left: 15px;
+}
+
+body aside h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+body aside p{
+    color: white;
+    padding-left: 15px;
+}
+
+/* SECTION */
+
+body section {
+    margin-top: 5px;
+    background-color: white;
+    
+}
+
+body section article {
+    display: inline-block;
+    position: relative;
+}
+
+body section article header {
+    width: 16rem;
+    background-color: transparent;
+    position: absolute;
+    padding-left: 15px;
+    color: black;
+    text-shadow: 4px 6px 5px black;
+}
+
+body section article header h1{
+    font-size: 20px;
+}
+
+body section article p{
+    padding-left: 15px;
+}
+
+body section article footer {
+    background-color: #E1493E;
+    color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    margin: 0;
+}
+body section article footer span ~ a {
+    padding-top: 5px;
+    color: white;
+}
+
+body section article footer span a {
+    padding-top: 5px;
+    color: white;
+}
+
+/* FOOTER */
+
+body footer{
+    background-color: #2A2F33;
+    color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    margin: 5px 0px;
+}
+
+body footer p{
+    margin: 0;
+}
+
+
+/* principais {
+    color1: #2A2F33;
+    color2: #046DD5;
+    color3: #F4655F;
+}
+
+secoes {
+    color1: #E1493E;
+    color2: #8ABA56;
+    color3: #5B4282;
+    color4: #FF8932;
+    color5: #19B6E9;
+    color6: #E84C8B;
+} */

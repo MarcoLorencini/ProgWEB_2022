@@ -1,1 +1,75 @@
 /* posicionando os componentes principais */
+*{
+    box-sizing: border-box;
+}
+
+/* HTML */
+html{
+    width: 60em;
+    margin: auto;
+}
+
+/* BODY */
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'nav nav nav nav aside'
+    'section section section section aside'
+    'footer footer footer footer aside';
+    grid-template-rows: auto;
+}
+
+/* GRID */
+header { grid-area: header; }
+#menu { grid-area: nav; }
+#related { grid-area: aside; }
+#news { grid-area: section; }
+footer { grid-area: footer; }
+
+
+
+/* HEADER */
+body header {
+    width: 100%;
+}
+
+body header #signup {
+    display: inline-block;
+    float: right;
+}
+
+body header h2 {
+    display: inline-block;
+}
+
+/* NAV */
+
+body nav ul {
+    display: flex;
+}
+
+body nav ul li{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+/* ASIDE */
+
+
+
+/* SECTION */
+body section{
+    margin: 1sem 1em 1em 0;
+}
+
+body section article {
+    border: 1em solid transparent;
+}
+
+
+/* FOOTER */
+body footer{
+    margin: 0 1em 0 0;
+}

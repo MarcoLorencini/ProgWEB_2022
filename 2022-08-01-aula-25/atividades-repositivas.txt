@@ -1,58 +1,85 @@
 1. Explique o que é um motor de renderização e qual é sua utilização/aplicação nos navegadores
 web.
-R: Há uma grande diversidade de dispositivos que acessam a internet. Entre eles, há uma série de tablets, smartphones, pc’s e etc. Cada um destes meios de acesso utilizam um determinado browser 
-para navegar na web. Não há como os desenvolvedores manterem um bom nível de compatibilidade com todos estes browsers levando em consideração a particularidade de cada um. Uma maneira 
-mais segura de manter o código compatível, é nivelar o desenvolvimento pelos motores de renderização. Cada browser utiliza um motor de renderização que é responsável pelo processamento do 
-código da página.
+R:Motor de renderização é um software usado dentro dos aparelhos digitais (celulares, tablets, computadores, entre outros) que serve para processar o código de uma página. Ou seja, os navegadores web como Safari e Google Chrome utilizam desses motores de renderização para poder abrir uma página e mostrá-la corretamente. 
 
 2. Sobre HTML, responda:
 a) Qual é a estrutura básica de um HTML5 (o que deve ter por padrão e o que vai em cada
 local)?
-R:
+R:Com o html5 algumas coisas mudaram e outras novas chegaram, sua nova versão veio para justamente padronizar e facilitar o entendimento do código com mais semântica, como também está sendo criado para que seja compatível com os browsers recentes. Para começar o código devemos utilizar <!DOCTYPE html!> uma instrução para que o browser tenha informações sobre qual versão de código a marcação foi escrita. Logo depois o <html lang=”pt-br”> esse atributo LANG que vai junto com o html é necessário para que os user-agents saibam qual a linguagem principal do documento. E assim começa com o<head> onde fica toda a parte inteligente da página, os metadados </head> e depois o <body>onde possui as informações que serão carregadas na página </body>. 
+Agora é possível também separar os elementos do htm5 em algumas categorias: 
+Metadata: as informações que estão no head, elas são: base, command, link, meta, noscript, script, style e title;
+Flow: a maioria dos elementos utilizados no body são considerados flow, por exemplo: a, article, aside, audio, br, div, figure, footer, h1, iframe, img, label, map, nav, span, style, table, video, entre outros; 
+Sectioning: são os grupos que podem ser formados para melhor organização da página, como: article, aside, nav, section;
+Heading: uma seção de cabeçalhos, são eles: h1, h2, h3, h4, h5, h6 e hgroup;
+Phrasing: elementos que marcam o texto do documento, exemplo: a, audio, br, datalist, iframe, img, mark, select, strong, textarea, time, entre outros;
+Embedded: são aqueles elementos que importam outa fonte de informação para o documento, por exemplo: audio, canvas, embed, iframe, img, entre outros;
+Interactive: fazem parte da interação de usuário, como: a, button, details, iframe, label, menu, select, entre outros;
 b) Qual é a importância dos novos elementos e atributos do HTML5?
-R:
+R: Esses novos elementos e atributos vem om o objetivo de facilitar e agilizar o entendimento do código, definindo os principais setores do documento, agora é possível, por exemplo, diferenciar o cabeçalho do rodapé no código ao utilizar a nova semântica. Como também os buscadores conseguem vasculhar o código de maneira mais rápida e eficaz.
 c) Como definir o idioma da página?
-R:
+R: Para definir o idioma principal de uma página, ao iniciar o documento, depois do doctype, quando for colocar a tag html é só acrescentar também a linguagem, exemplo de um documento que a principal linguagem vai ser português: <html lang=”pt-br”>
 d) Como definir a codificação da página?
-R:
+R: Utilizando a tag meta charset dentro do head, atualmente é indicado usar o utf-8 por abranger mais caracteres (mais completo), ficando assim: 
+<head>
+<meta charset=”utf-8”>
+</head
 e) Quais os erros que ocorrem quando a codificação do arquivo é diferente da codificação
 informada na página?
-R:
+R: Quando há um erro de codificação, na hora da visualização pode aparecer caracteres estranhos, esse tipo de problema é recorrente por exemplo quando é usado o idioma inglês (adotado como padrão em muitos softwares) e o texto é em português, que tem muitos caracteres acentuados, nesses casos com a codificação errada “São Paulo” poderia acabar sendo mostrado assim “SÃ£o Paulo” ou “S?o Paulo”.
 f) Como adicionar um estilo somente em um elemento do HTML?
-R:
+R: Para usar um estilo em um elemento específico dentro do html é necessário colocar logo após o nome da tag style=”” e dentro dela o estilo que você deseja. Por exemplo, quero que o parágrafo que estou escrevendo tenha cor azul: <p style=”color: blue;”>.
 g) Como adicionar várias definições de estilo na página Web?
-R:
+R: Para adicionar estilos diferentes em elementos diferentes dentro do html, sem que eles sejam colocados dentro de cada tag, basta no head adicionar a tag style e dentro dela acrescentar todos os estilos desejados. Por exemplo: 
+<head>
+<style>
+body {
+background-color: black;
+}
+p {
+color: blue;
+font-size: 23px;
+}
+</style>
+</head>
+
 h) Como adicionar um estilo que está em um arquivo externo?
-R:
+R:Para ter um estilo externo é preciso criar um documento só com os estilos e lembrar de salvar com a extensão “.css” e depois dentro do html fazer a ligação entre um documento e outro no head utilizando a tag link, dessa forma:
+<head>
+<link rel=”stylesheet” href=”estilo.css”>
+</head>
+
 i) O que são elementos de linha e elementos de bloco? Qual a diferença entre eles?
-R:
+R: São elementos que ficam no body do documento, basicamente os elementos do html podem ser divididos nessas duas opções, sendo os elementos de linha aqueles que ocupam apenas o espaço necessário e podem ter outros elementos na sua frente, enquanto os elementos de bloco não admitem nada na sua frente, ocupando todo espaço horizontal. 
+Exemplos de elementos de linha: a, img, span, entre outros.
+Exemplos de elementos de bloco: div, títulos (h1, h2...), form, entre outros.
+
 j) Descreva de forma sucinta para que serve cada um dos elementos à seguir:
 i. section;
-R:
+R: define uma nova seção genérica no documento, podem existir várias dentro de um documento, separando assuntos como introdução ou destaque, novidades, informação de contato, etc.
 ii. nav;
-R:
+R: representa uma seção da página que contém um grupo de links importantes para outras partes do website, normalmente são colocados no rodapé ou no menu. Importante diferenciar quais links são importantes para colocar no nav e quais não são, pois não convém colocar todos nele.
 iii. article;
-R:
+R: representa uma composição independente em um documento, página, aplicação, ou site, ou que é destinado a ser distribuido de forma independente ou reutilizável, por exemplo, em sindicação.
 iv. aside;
-R:
+R: representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo
 v. hgroup;
-R:
+R: permite que o cabeçalho principal de uma seção de documento seja agrupado com quaisquer cabeçalhos secundarios-como subtitulos ou titulos alternativos-para formatar um cabeçalho de varios niveis.
 vi. header;
-R:
+R: representa um grupo de suporte introdutório ou navegacional.
 vii. footer;
-R:
+R: representa um rodapé para o seu sectioning content (conteúdo de seção) mais próximo ou sectioning root elemento 
 viii. span;
-R:
+R: é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza
 k) Descreva de forma sucinta para que serve cada um dos atributos à seguir:
 i. autofocus;
-R:
+R: Especifica que um elemento deve receber automaticamente o foco quando a página é carrega
 ii. placeholder;
-R:
+R: tem o intuito de ajudar usuários a entender como devem preencher determinado formulário, inserindo um texto contextual no campo a ser respondido
 iii. required;
-R:
+R: é um atributo booleano usado para indicar que um determinando campo de formulário é obrigatório para o envio do mesmo
 iv. maxlength.
-R:
+R: é o tamanho máximo de caracteres que são aceitos como entrada
 l) Quais os elementos e atributos descontinuados?
-R:
+R: basefont, big, center, font, s, strike, tt, u.
 m) O que é DOM? Dê um exemplo.
-R:
+R: Ele é utilizado pelo navegador para representar a sua página Web. É ele que fornece uma representação estruturada do documento como se fosse uma espécie de árvore com galhos, definindo métodos para que possam ser alterados estrutura, estilo e conteúdo do documento.
