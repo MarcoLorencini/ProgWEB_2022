@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    width: 60rem;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'header header header header header'
+    'section section section section aside'
+    'footer footer footer footer aside';
+}
+
+header { grid-area: header; }
+section { grid-area: section; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+
+div {
+    margin: 2px;
+    border: 5px solid black;
+}
