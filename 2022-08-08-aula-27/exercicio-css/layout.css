@@ -61,12 +61,30 @@ body nav ul li{
 
 /* SECTION */
 body section{
-    margin: 1sem 1em 1em 0;
+    margin: 1em 1em 1em 0;
 }
 
-body section article {
-    border: 1em solid transparent;
+body section article{
+    margin-bottom: 1em;
 }
+
+body section article footer {
+    
+}
+
+body section article footer .tags, .date, .comments {
+    padding: 0 10px 0 0;
+    display: inline-block;
+    float: right;
+}
+body section article footer .tags a:nth-child(1) {
+    padding: 0 8px 0 0;
+}
+
+body section article footer .author {
+    display: inline-block;
+}
+
 
 
 /* FOOTER */

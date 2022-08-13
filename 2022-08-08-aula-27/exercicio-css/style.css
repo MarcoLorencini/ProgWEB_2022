@@ -146,14 +146,13 @@ body aside p{
 /* SECTION */
 
 body section {
-    margin-top: 5px;
-    background-color: white;
-    
+    margin-top: 5px;   
 }
 
 body section article {
     display: inline-block;
     position: relative;
+    background-color: white;
 }
 
 body section article header {
@@ -188,6 +187,10 @@ body section article footer span ~ a {
 body section article footer span a {
     padding-top: 5px;
     color: white;
+}
+
+body section article img {
+    width: 100%;
 }
 
 /* FOOTER */

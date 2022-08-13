@@ -1,0 +1,22 @@
+
+/* GENERAL */
+*{
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+/* NAV */
+
+/* SECTION */
+body #sectionMain {
+    
+}
+/* ASIDE */
+body aside {
+    display: inline-block;
+}
+
+/* FOOTER */
+body footer {
+}
